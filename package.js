@@ -1,19 +1,18 @@
 Package.describe({
-  summary: "simple upload avatar package for meteor",
-  version: "1.2.0",
-  name: "particle4dev:upload-avatar",
-  git: "https://github.com/particle4dev/upload-avatar-meteor.git"    
+  summary: "Meteor crop & upload images for various need like avatars, upload photos, etc.",
+  version: "0.1.0",
+  name: "jayuda:upload-image",
+  git: "https://github.com/Jayuda/upload-image.git"
 });
 
 var both = ['client', 'server'];
 var client = ['client'];
-var server = ['server'];
 
 Package.onUse(function (api) {
   api.versionsFrom("METEOR@1.2.0.2");
 
   api.use(['underscore', 'accounts-base', 'accounts-password'], both);
-  api.use(['jquery', 'templating', 'twbs:bootstrap'], client);
+  api.use(['jquery', 'templating'], client);
 
   //add file
   api.addFiles([
@@ -33,14 +32,4 @@ Package.onUse(function (api) {
     'src/template/editYourAvatarModal.js',
     'src/template/editYourAvatarModal.css'
   ], client);
-
-  api.add_files([
-    'src/server.js',
-  ], server);
-});
-
-Package.onTest(function (api) {
-  api.use(['particle4dev:upload-avatar','accounts-password','tinytest'], both);
-  api.addFiles('tests/client.js', 'client');
-  api.addFiles('tests/server.js', 'server');
 });

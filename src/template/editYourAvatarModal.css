@@ -16,13 +16,9 @@
 
 #previewFrame {
   margin: 0 1em;
-  width: 128px;
-  height: 128px;
 }
 
 #previewFrame #preview {
-  width: 128px;
-  height: 128px;
   overflow: hidden;
 }
 
