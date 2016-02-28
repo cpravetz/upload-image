@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Meteor crop & upload images for various need like avatars, upload photos, etc.",
-  version: "0.1.0",
+  version: "0.1.8",
   name: "jayuda:upload-image",
   git: "https://github.com/Jayuda/upload-image.git"
 });
