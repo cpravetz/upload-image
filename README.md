@@ -1,17 +1,4 @@
 Thanks to particle4dev:upload-avatar
-
-### Install Meteor
-    $ curl https://install.meteor.com | /bin/sh
-
-### Create a project
-    $ meteor create beautiful-avatar
-
-### Install Account System
-    $ meteor add accounts-base
-    $ meteor add accounts-password
-
-### Install our Avatar-Upload packages
-
 ### Create template and install on the application
     {{> editYourAvatarModal}}
 
