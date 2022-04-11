@@ -1,15 +1,15 @@
 Package.describe({
   summary: "Meteor crop & upload images for various need like avatars, upload photos, etc.",
   version: "0.1.8",
-  name: "jayuda:upload-image",
-  git: "https://github.com/Jayuda/upload-image.git"
+  name: "seakaytee:upload-image",
+  git: "https://github.com/cpravetz/upload-image.git"
 });
 
 var both = ['client', 'server'];
 var client = ['client'];
 
 Package.onUse(function (api) {
-  api.versionsFrom("METEOR@1.2.0.2");
+  api.versionsFrom("2.3");
 
   api.use(['underscore', 'accounts-base', 'accounts-password'], both);
   api.use(['jquery', 'templating'], client);
